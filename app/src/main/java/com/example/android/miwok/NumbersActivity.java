@@ -14,12 +14,16 @@
  * limitations under the License.
  */
 package com.example.android.miwok;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
 public class NumbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,14 +40,9 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("seven");
         words.add("eight");
         words.add("nine");
-        LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
-        int i = 0;
-        while (i <= 9) {
-            TextView wordView = new TextView(this);
-            wordView.setText(words.get(i));
-            rootView.addView(wordView);
-            i++;
-        }
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(itemsAdapter);
 
     }
 }

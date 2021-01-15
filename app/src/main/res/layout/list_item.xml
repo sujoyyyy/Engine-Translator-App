@@ -7,16 +7,17 @@
     android:padding="16dp">
 
     <TextView
-        android:id="@+id/engine_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="18dp"
-        tools:text="lutti" />
-
-    <TextView
         android:id="@+id/english_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="13dp"
+        tools:text="lutti" />
+
+    <TextView
+        android:id="@+id/engine_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
         android:textSize="18dp"
         tools:text="one" />
 

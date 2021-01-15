@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context="com.example.android.miwok.MainActivity">
 
     <ScrollView
@@ -40,6 +40,13 @@
                 style="@style/CategoryStyle"
                 android:background="@color/category_phrases"
                 android:text="@string/category_phrases" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="55dp"
+                android:paddingBottom="30dp"
+                android:src="@drawable/man"
+                android:scaleType="centerInside"/>
         </LinearLayout>
     </ScrollView>
 

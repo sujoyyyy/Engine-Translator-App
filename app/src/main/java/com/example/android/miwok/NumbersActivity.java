@@ -15,6 +15,7 @@
  */
 package com.example.android.miwok;
 
+import android.provider.UserDictionary;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -31,20 +32,21 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
-        ArrayList<String> words = new ArrayList<String>();
-        words.add("zero");
-        words.add("one");
-        words.add("two");
-        words.add("three");
-        words.add("four");
-        words.add("five");
-        words.add("six");
-        words.add("seven");
-        words.add("eight");
-        words.add("nine");
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, words);
+        ArrayList<Word> words = new ArrayList<Word>();
+        words.add(new Word("one","!"));
+        words.add(new Word("two","@"));
+        words.add(new Word("three","#"));
+        words.add(new Word("four","$"));
+        words.add(new Word("five","%"));
+        words.add(new Word("six","^"));
+        words.add(new Word("seven","&"));
+        words.add(new Word("eight","*"));
+        words.add(new Word("nine","("));
+        words.add(new Word("zero",")"));
+
+        WordAdapter adapter = new WordAdapter(this,words);
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
 
     }
 }

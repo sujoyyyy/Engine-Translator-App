@@ -33,18 +33,18 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one","!"));
-        words.add(new Word("two","@"));
-        words.add(new Word("three","#"));
-        words.add(new Word("four","$"));
-        words.add(new Word("five","%"));
-        words.add(new Word("six","^"));
-        words.add(new Word("seven","&"));
-        words.add(new Word("eight","*"));
-        words.add(new Word("nine","("));
-        words.add(new Word("zero",")"));
+        words.add(new Word("zero", ")"));
+        words.add(new Word("one", "!"));
+        words.add(new Word("two", "@"));
+        words.add(new Word("three", "#"));
+        words.add(new Word("four", "$"));
+        words.add(new Word("five", "%"));
+        words.add(new Word("six", "^"));
+        words.add(new Word("seven", "&"));
+        words.add(new Word("eight", "*"));
+        words.add(new Word("nine", "("));
 
-        WordAdapter adapter = new WordAdapter(this,words);
+        WordAdapter adapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
 

@@ -15,24 +15,24 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
     private static final String LOG_TAG = WordAdapter.class.getSimpleName();
-    public WordAdapter(Activity context, ArrayList<Word> words)
-    {
-        super(context,0, words);
+
+    public WordAdapter(Activity context, ArrayList<Word> words) {
+        super(context, 0, words);
     }
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
-        if(listItemView==null)
-        {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.list_item,parent,false);
+                    R.layout.list_item, parent, false);
         }
         Word currentWord = getItem(position);
-        TextView engineTranslation =  (TextView) listItemView.findViewById(R.id.engine_view);
+        TextView engineTranslation = (TextView) listItemView.findViewById(R.id.engine_view);
         engineTranslation.setText(currentWord.getEngineTranslation());
 
-        TextView defaultTranslation =  (TextView) listItemView.findViewById(R.id.english_view);
+        TextView defaultTranslation = (TextView) listItemView.findViewById(R.id.english_view);
         defaultTranslation.setText(currentWord.getDefaultTranslation());
 
         return listItemView;

@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:padding="16dp"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
     <TextView
         android:id="@+id/engine_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="lutti"
-        android:textSize="18dp"/>
+        android:textSize="18dp"
+        tools:text="lutti" />
+
     <TextView
         android:id="@+id/english_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="one"
-        android:textSize="18dp"/>
+        android:textSize="18dp"
+        tools:text="one" />
 
 </LinearLayout>

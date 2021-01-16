@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_color"
     tools:context="com.example.android.miwok.MainActivity">
 
     <ScrollView
@@ -43,8 +44,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="55dp"
-                android:paddingBottom="30dp"
+                android:paddingTop="110dp"
+                android:paddingBottom="70dp"
                 android:src="@drawable/man"
                 android:scaleType="centerInside"/>
         </LinearLayout>

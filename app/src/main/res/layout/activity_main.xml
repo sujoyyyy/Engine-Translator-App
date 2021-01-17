@@ -41,13 +41,14 @@
                 style="@style/CategoryStyle"
                 android:background="@color/category_phrases"
                 android:text="@string/category_phrases" />
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingTop="110dp"
                 android:paddingBottom="70dp"
-                android:src="@drawable/man"
-                android:scaleType="centerInside"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/man" />
         </LinearLayout>
     </ScrollView>
 

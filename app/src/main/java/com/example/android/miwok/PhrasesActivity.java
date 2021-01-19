@@ -15,6 +15,8 @@
  */
 package com.example.android.miwok;
 
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,6 +28,26 @@ import java.util.ArrayList;
 
 public class PhrasesActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer = new MediaPlayer();
+    private AudioManager audioManager;
+    AudioManager.OnAudioFocusChangeListener afChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            switch (focusChange) {
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK: {
+                    mediaPlayer.pause();
+                    mediaPlayer.seekTo(0);
+                    break;
+                }
+                case AudioManager.AUDIOFOCUS_GAIN: {
+                    mediaPlayer.start();
+                }
+                case AudioManager.AUDIOFOCUS_LOSS: {
+                    releaseMediaPlayer();
+                }
+            }
+        }
+    };
     private MediaPlayer.OnCompletionListener onCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
@@ -37,19 +59,20 @@ public class PhrasesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phrases);
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         final ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("Every nook and corner", "kona kona", R.raw.kona));
         words.add(new Word("to go hand in hand", "saath saath chalna", R.raw.saath));
         words.add(new Word("by hook or crook", "kisi bhi tarah", R.raw.kisi));
         words.add(new Word("feather in one's cap", "sar par taj rakha hona", R.raw.sar));
         words.add(new Word("turn deaf ears", "dhyaan nhi dena", R.raw.dhyaan));
-        words.add(new Word("chicken hearted", "kamzor dil",R.raw.kamzor));
-        words.add(new Word("Stop short of something", "thode se reh jaana",R.raw.thode));
-        words.add(new Word("being busy doing nothing", "samay barbaad karna",R.raw.samay));
-        words.add(new Word("Room for improvement", "abhi aur accha ho sakta hai",R.raw.abhi));
-        words.add(new Word("Chuckle in one's sleeves", "chupke se hasna",R.raw.chupke));
+        words.add(new Word("chicken hearted", "kamzor dil", R.raw.kamzor));
+        words.add(new Word("Stop short of something", "thode se reh jaana", R.raw.thode));
+        words.add(new Word("being busy doing nothing", "samay barbaad karna", R.raw.samay));
+        words.add(new Word("Room for improvement", "abhi aur accha ho sakta hai", R.raw.abhi));
+        words.add(new Word("Chuckle in one's sleeves", "chupke se hasna", R.raw.chupke));
 
-        WordAdapter adapter = new WordAdapter(this, words,R.color.category_phrases);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="horizontal">
 
     <ImageView
@@ -10,34 +10,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"
-        android:padding="16dp"/>
+        android:padding="16dp" />
 
-    <LinearLayout
-        android:id="@+id/text_container"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/english_view"
+        <LinearLayout
+            android:id="@+id/text_container"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:textSize="13dp"
-            android:textColor="#fff"
-            android:layout_weight="1"
-            tools:text="lutti" />
+            android:layout_height="match_parent"
+            android:background="@color/category_numbers"
+            android:orientation="vertical"
+            android:paddingLeft="16dp">
 
-        <TextView
-            android:id="@+id/engine_view"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:textColor="#fff"
-            android:textSize="18dp"
-            android:gravity="top"
-            android:layout_weight="1"
-            tools:text="one" />
+            <TextView
+                android:id="@+id/english_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textSize="13dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
 
-    </LinearLayout>
+                tools:text="lutti" />
+
+            <TextView
+                android:id="@+id/engine_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                tools:text="one" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/round_play_arrow_white_24dp" />
+
+    </RelativeLayout>
 
 </LinearLayout>
+

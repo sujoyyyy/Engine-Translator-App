@@ -15,6 +15,9 @@
  */
 package com.example.android.miwok;
 
+import android.app.Activity;
+import android.content.Context;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,6 +29,27 @@ import java.util.ArrayList;
 
 public class FamilyActivity extends AppCompatActivity {
     MediaPlayer mediaPlayer = new MediaPlayer();
+    private AudioManager audioManager;
+
+    AudioManager.OnAudioFocusChangeListener afChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            switch (focusChange) {
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK: {
+                    mediaPlayer.pause();
+                    mediaPlayer.seekTo(0);
+                    break;
+                }
+                case AudioManager.AUDIOFOCUS_GAIN: {
+                    mediaPlayer.start();
+                }
+                case AudioManager.AUDIOFOCUS_LOSS: {
+                    releaseMediaPlayer();
+                }
+            }
+        }
+    };
     private MediaPlayer.OnCompletionListener onCompletionListener = new MediaPlayer.OnCompletionListener() {
         @Override
         public void onCompletion(MediaPlayer mediaPlayer) {
@@ -37,26 +61,31 @@ public class FamilyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         final ArrayList<Word> words = new ArrayList<Word>();
         words.add(new Word("father", "dad", R.drawable.family_father, R.raw.dad));
         words.add(new Word("mother", "mommy", R.drawable.family_mother, R.raw.mommy));
         words.add(new Word("brother", "bhai", R.drawable.family_younger_brother, R.raw.bhai));
         words.add(new Word("sister", "sis", R.drawable.family_younger_sister, R.raw.sis));
         words.add(new Word("husband", "hubby", R.drawable.family_older_brother, R.raw.hubby));
-        words.add(new Word("wife", "honey", R.drawable.family_older_sister,R.raw.honey));
-        words.add(new Word("grandfather", "grandad", R.drawable.family_grandfather,R.raw.grandad));
-        words.add(new Word("grandmother", "granny", R.drawable.family_grandmother,R.raw.granny));
-        WordAdapter adapter = new WordAdapter(this, words,R.color.category_family);
+        words.add(new Word("wife", "honey", R.drawable.family_older_sister, R.raw.honey));
+        words.add(new Word("grandfather", "grandad", R.drawable.family_grandfather, R.raw.grandad));
+        words.add(new Word("grandmother", "granny", R.drawable.family_grandmother, R.raw.granny));
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_family);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Word word = words.get(i);
-                releaseMediaPlayer();
-                mediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioResourceID());
-                mediaPlayer.start();
-                mediaPlayer.setOnCompletionListener(onCompletionListener);
+                int res = audioManager.requestAudioFocus(afChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+                if (res == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                    releaseMediaPlayer();
+                    mediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioResourceID());
+                    mediaPlayer.start();
+                    mediaPlayer.setOnCompletionListener(onCompletionListener);
+                }
+
             }
         });
     }

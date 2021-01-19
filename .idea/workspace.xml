@@ -9,7 +9,59 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4a2a825-597b-4af6-86eb-8acb953bbdfa" name="Default Changelist" comment="" />
+    <list default="true" id="b4a2a825-597b-4af6-86eb-8acb953bbdfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/abhi.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/bhai.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/black.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/brown.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/chupke.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/dad.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/dhyaan.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/eight.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/five.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/four.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/grandad.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/granny.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/gray.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/green.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/honey.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/hubby.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/kamzor.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/kisi.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/kona.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/mommy.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/nine.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/one.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/red.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/saath.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/samay.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/sar.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/seven.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/sis.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/six.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/thode.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/three.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/two.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/white.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/yellow.m4a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/zero.m4a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/ColorsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/ColorsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/FamilyActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/FamilyActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NumbersActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/NumbersActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PhrasesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/PhrasesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/miwok/Word.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -283,14 +335,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610218544531" />
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1610691144918">
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1610994236874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610691144918" />
+    <state x="765" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610994236874" />
     <state x="690" y="311" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610783130671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="311" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610783130671" />
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog" timestamp="1610979570356">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="274" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610979570356" />
     <state x="540" y="274" key="AndroidCreateResourceFileDialog" timestamp="1610688632168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -319,5 +375,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610477975483" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610994204930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610994204930" />
   </component>
 </project>

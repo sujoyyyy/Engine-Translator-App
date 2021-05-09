@@ -11,4 +11,4 @@ Download Android Studio IDE from [here](https://developer.android.com/studio) an
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate. Please note this project is not complete but ongoing.
 
 ## Screenshots
-(Ongoing Project)
+![](https://github.com/sujoyyyy/Engine-Translator-App/blob/main/ENGINE%20LANG%20TUTORIAL.png)
